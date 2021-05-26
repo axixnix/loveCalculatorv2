@@ -19,7 +19,7 @@ class LoveCalculatorController extends Controller
         $ans =(($intersectionCount * 2)/($firstCount + $secondCount)) * 100;
         
 
-        return response()->json('binary oracle says '.$firstName.' '.'and'.' '.$secondName.' '.'are'.' '.number_format($ans,2).'%'.' '.'compatible');
+        return response()->json('binary oracle has determined that '.$firstName.' '.'and'.' '.$secondName.' '.'are'.' '.number_format($ans,2).'%'.' '.'compatible');
 
     }
 }
